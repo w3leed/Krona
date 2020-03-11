@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context=".Adap"
+    android:background="#5B429D">
+    <com.github.chrisbanes.photoview.PhotoView
+       android:layout_width="match_parent"
+      android:layout_height="match_parent"
+        android:id="@+id/photo_vieww"
+        android:scaleType="centerCrop"
+        android:src="@drawable/adap"/>
+
+</LinearLayout>

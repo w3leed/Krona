@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Advise"
+    android:background="#E7E7E7">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/img112"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/advese111111" />
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/img222"
+        android:src="@drawable/advis3"/>
+</LinearLayout>
+</ScrollView>

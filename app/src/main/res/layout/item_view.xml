@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Recycler"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/card_one"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_onee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_one"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@id/card_onee"
+                app:layout_constraintStart_toStartOf="@id/card_onee"
+                app:layout_constraintTop_toTopOf="@id/card_onee"
+                android:src="@drawable/waleed" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@id/image_one"
+                app:layout_constraintStart_toEndOf="@id/image_one"
+                app:layout_constraintTop_toTopOf="@id/image_one">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/image_one"
+                    app:layout_constraintTop_toTopOf="@id/image_one"
+                    android:text="Waleed Khadrawy" />
+
+
+                <TextView
+                    android:id="@+id/tv_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#808080"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@id/image_one"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name"
+                    android:text="Co-Founder" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/card_two"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_twoo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_two"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@id/card_twoo"
+                app:layout_constraintStart_toStartOf="@id/card_twoo"
+                app:layout_constraintTop_toTopOf="@id/card_twoo"
+                android:src="@drawable/ahmed" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@id/image_two"
+                app:layout_constraintStart_toEndOf="@id/image_two"
+                app:layout_constraintTop_toTopOf="@id/image_two">
+
+                <TextView
+                    android:id="@+id/tv_name_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/image_two"
+                    app:layout_constraintTop_toTopOf="@id/image_two"
+                    android:text="Ahmed AbdulRazek" />
+
+
+                <TextView
+                    android:id="@+id/tv_job_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#808080"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@id/image_two"
+                    app:layout_constraintTop_toBottomOf="@id/tv_job_two"
+                    android:text="Android Developer" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/card_three"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_threee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_three"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@id/card_threee"
+                app:layout_constraintStart_toStartOf="@id/card_threee"
+                app:layout_constraintTop_toTopOf="@id/card_threee"
+                app:layout_constraintVertical_bias="0.0"
+                android:src="@drawable/kg" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@id/image_three"
+                app:layout_constraintStart_toEndOf="@id/image_three"
+                app:layout_constraintTop_toTopOf="@id/image_three">
+
+                <TextView
+                    android:id="@+id/tv_name_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/image_three"
+                    app:layout_constraintTop_toTopOf="@id/image_three"
+                    android:text="Mohamed Ali" />
+
+
+                <TextView
+                    android:id="@+id/tv_job_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#808080"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@id/image_three"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_three"
+                    android:text="Android Developer" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:textSize="25dp"
+    android:textColor="#01579B"
+    android:text="للــتواصل  قم بالضــغط على اى منهم  "
+    />
+</LinearLayout>
